@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/keyboard', function(req, res)  {
     const menu = {
-        type: 'button',
+        type: 'buttons',
         buttons: ['버튼1', '버튼2', '버튼3']
     };
     res.setHeader('Content-Type', 'application/json');
