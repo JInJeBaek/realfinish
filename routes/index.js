@@ -12,7 +12,7 @@ router.get('/keyboard', function(req, res)  {
         buttons: ['버튼1', '버튼2', '버튼3']
     };
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(menu));
+    res.send(JSON.stringify(menu));
 });
 
 router.post('/message', function(req, res){
