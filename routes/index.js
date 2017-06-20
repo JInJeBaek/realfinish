@@ -8,11 +8,11 @@ router.get('/', function(req, res, next) {
 
 router.get('/keyboard', function(req, res)  {
     const menu = {
-        type: 'buttons',
-        buttons: ['버튼1', '버튼2', '버튼3']
+        type: "buttons",
+        buttons: ["버튼1", "버튼2", "버튼3"]
     };
-    res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(menu));
+    res.set({'Content-Type':'application/json'
+    }).send(JSON.stringify(menu));
 });
 
 router.post('/message', function(req, res){
